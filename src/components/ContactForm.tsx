@@ -27,9 +27,21 @@ const ContactForm = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate API call
-    setTimeout(() => {
-      setIsSubmitting(false);
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to send message');
+      }
+
       setSubmitted(true);
       setFormData({
         name: '',
@@ -43,7 +55,12 @@ const ContactForm = () => {
       setTimeout(() => {
         setSubmitted(false);
       }, 5000);
-    }, 1500);
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      // You might want to show an error message to the user here
+    } finally {
+      setIsSubmitting(false);
+    }
   };
   
   return (
