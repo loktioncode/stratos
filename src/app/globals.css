@@ -64,4 +64,14 @@ body {
   background-color: #ffffff;
   color: #1f2937;
   font-family: 'Inter', sans-serif;
+  padding-top: 72px; /* Add padding to account for fixed navbar */
+}
+
+/* Add smooth transitions for navbar elements */
+nav {
+  transition: all 0.3s ease-in-out;
+}
+
+nav a {
+  transition: all 0.2s ease-in-out;
 }
