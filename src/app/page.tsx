@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from 'next/link';
-import { FiArrowRight, FiCheck, FiBarChart2, FiTrendingUp, FiUsers, FiTarget, FiActivity, FiGrid } from 'react-icons/fi';
+import { FiCheck, FiBarChart2, FiTrendingUp, FiUsers, FiTarget, FiActivity, FiGrid, FiClock, FiShield } from 'react-icons/fi';
 import ContactForm from '@/components/ContactForm';
 
 export default function Home() {
@@ -16,23 +16,23 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-                Strategic Business Solutions For Your Success
+                Leading IT Consulting Services for Your Success
               </h1>
               <p className="text-lg md:text-xl opacity-90 mb-8">
-                Stratos provides expert business consultancy services to transform your organization and drive exceptional results.
+                Stratos is a leading IT consulting services provider renowned for delivering tailor-made solutions to businesses of all sizes. Get 2X faster delivery and save up to 40% on cost!
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link 
-                  href="/#services" 
+                  href="#services" 
                   className="btn-primary bg-white text-[var(--primary-blue)] hover:bg-gray-100"
                 >
-                  Our Services
+                  Explore Services
                 </Link>
                 <Link 
-                  href="/#contact" 
+                  href="#contact" 
                   className="btn-primary border border-white hover:bg-white hover:text-[var(--primary-blue)]"
                 >
-                  Contact Us
+                  Start Free Trial
                 </Link>
               </div>
             </div>
@@ -52,127 +52,144 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Overview Section */}
+      {/* Features Section */}
+      <section className="py-12 bg-white">
+        <div className="container-wide">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="flex items-center space-x-4 p-6 bg-gray-50 rounded-lg">
+              <FiClock className="w-8 h-8 text-[var(--primary-blue)]" />
+              <div>
+                <h3 className="font-bold">24x7 Technical Support</h3>
+                <p className="text-gray-600">Round-the-clock assistance</p>
+              </div>
+            </div>
+            <div className="flex items-center space-x-4 p-6 bg-gray-50 rounded-lg">
+              <FiCheck className="w-8 h-8 text-[var(--primary-blue)]" />
+              <div>
+                <h3 className="font-bold">15 Days Risk-Free Trial</h3>
+                <p className="text-gray-600">Try our services risk-free</p>
+              </div>
+            </div>
+            <div className="flex items-center space-x-4 p-6 bg-gray-50 rounded-lg">
+              <FiTarget className="w-8 h-8 text-[var(--primary-blue)]" />
+              <div>
+                <h3 className="font-bold">On-Time Delivery</h3>
+                <p className="text-gray-600">Guaranteed timely delivery</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
       <section id="services" className="py-20 bg-gray-50">
         <div className="container-wide">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="section-title">Our Business Consultancy Services</h2>
+            <h2 className="section-title">Our Professional IT Consulting Services</h2>
             <p className="text-lg text-gray-600">
-              We offer comprehensive business consultancy services to help your organization navigate challenges and achieve sustainable growth.
+              Our IT consulting experts ensure your business excels in today&apos;s digital world. We optimize systems, enhance cybersecurity, and streamline IT processes for exceptional results.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Service 1 */}
-            <div id="strategic-consulting" className="card hover:border-[var(--primary-blue)] hover:border transition-all">
+            <div className="card hover:border-[var(--primary-blue)] hover:border transition-all">
               <div className="bg-[var(--primary-light-blue)] text-white p-3 rounded-full w-14 h-14 flex items-center justify-center mb-6">
                 <FiBarChart2 className="w-7 h-7" />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-gray-800">Strategic Consulting</h3>
+              <h3 className="text-xl font-bold mb-4 text-gray-800">IT Strategy & Planning</h3>
               <p className="text-gray-600 mb-6">
-                We help organizations develop robust strategies aligned with their vision and objectives, providing a clear roadmap for future growth.
+                Align your IT assets with business goals through comprehensive assessment and strategic planning.
               </p>
               <ul className="space-y-3 mb-6">
                 <li className="flex items-start">
                   <FiCheck className="text-[var(--primary-blue)] w-5 h-5 mr-2 mt-1" />
-                  <span>Market analysis and competitive positioning</span>
+                  <span>IT governance assessment</span>
                 </li>
                 <li className="flex items-start">
                   <FiCheck className="text-[var(--primary-blue)] w-5 h-5 mr-2 mt-1" />
-                  <span>Strategic planning and roadmap development</span>
+                  <span>Strategic roadmap development</span>
                 </li>
                 <li className="flex items-start">
                   <FiCheck className="text-[var(--primary-blue)] w-5 h-5 mr-2 mt-1" />
-                  <span>Performance measurement and KPI frameworks</span>
+                  <span>Investment planning</span>
                 </li>
               </ul>
-              <Link href="/about" className="inline-flex items-center text-[var(--primary-blue)] font-medium hover:underline">
-                Learn More <FiArrowRight className="ml-2" />
-              </Link>
             </div>
 
             {/* Service 2 */}
-            <div id="business-transformation" className="card hover:border-[var(--primary-blue)] hover:border transition-all">
+            <div className="card hover:border-[var(--primary-blue)] hover:border transition-all">
               <div className="bg-[var(--primary-light-blue)] text-white p-3 rounded-full w-14 h-14 flex items-center justify-center mb-6">
                 <FiTrendingUp className="w-7 h-7" />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-gray-800">Business Transformation</h3>
+              <h3 className="text-xl font-bold mb-4 text-gray-800">Digital Transformation</h3>
               <p className="text-gray-600 mb-6">
-                We guide organizations through complex change initiatives, ensuring smooth transitions and sustainable business transformation.
+                Transform your business with cutting-edge digital solutions and strategies.
               </p>
               <ul className="space-y-3 mb-6">
                 <li className="flex items-start">
                   <FiCheck className="text-[var(--primary-blue)] w-5 h-5 mr-2 mt-1" />
-                  <span>Digital transformation strategies</span>
+                  <span>Customer experience enhancement</span>
                 </li>
                 <li className="flex items-start">
                   <FiCheck className="text-[var(--primary-blue)] w-5 h-5 mr-2 mt-1" />
-                  <span>Process optimization and efficiency</span>
+                  <span>Process automation</span>
                 </li>
                 <li className="flex items-start">
                   <FiCheck className="text-[var(--primary-blue)] w-5 h-5 mr-2 mt-1" />
-                  <span>Change management and organizational alignment</span>
+                  <span>Digital workflow optimization</span>
                 </li>
               </ul>
-              <Link href="/about" className="inline-flex items-center text-[var(--primary-blue)] font-medium hover:underline">
-                Learn More <FiArrowRight className="ml-2" />
-              </Link>
             </div>
 
             {/* Service 3 */}
             <div className="card hover:border-[var(--primary-blue)] hover:border transition-all">
               <div className="bg-[var(--primary-light-blue)] text-white p-3 rounded-full w-14 h-14 flex items-center justify-center mb-6">
-                <FiUsers className="w-7 h-7" />
+                <FiShield className="w-7 h-7" />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-gray-800">Operational Excellence</h3>
+              <h3 className="text-xl font-bold mb-4 text-gray-800">IT Security & Compliance</h3>
               <p className="text-gray-600 mb-6">
-                We enhance operational efficiency and effectiveness to drive performance improvements and competitive advantage.
+                Protect your business with comprehensive security solutions and compliance measures.
               </p>
               <ul className="space-y-3 mb-6">
                 <li className="flex items-start">
                   <FiCheck className="text-[var(--primary-blue)] w-5 h-5 mr-2 mt-1" />
-                  <span>Process mapping and optimization</span>
+                  <span>Security assessments</span>
                 </li>
                 <li className="flex items-start">
                   <FiCheck className="text-[var(--primary-blue)] w-5 h-5 mr-2 mt-1" />
-                  <span>Cost reduction and efficiency improvements</span>
+                  <span>Compliance management</span>
                 </li>
                 <li className="flex items-start">
                   <FiCheck className="text-[var(--primary-blue)] w-5 h-5 mr-2 mt-1" />
-                  <span>Performance management systems</span>
+                  <span>Risk mitigation</span>
                 </li>
               </ul>
-              <Link href="/about" className="inline-flex items-center text-[var(--primary-blue)] font-medium hover:underline">
-                Learn More <FiArrowRight className="ml-2" />
-              </Link>
             </div>
 
             {/* Service 4 */}
             <div className="card hover:border-[var(--primary-blue)] hover:border transition-all">
               <div className="bg-[var(--primary-light-blue)] text-white p-3 rounded-full w-14 h-14 flex items-center justify-center mb-6">
-                <FiTarget className="w-7 h-7" />
+                <FiUsers className="w-7 h-7" />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-gray-800">Technology Strategy</h3>
+              <h3 className="text-xl font-bold mb-4 text-gray-800">IT Staff Augmentation</h3>
               <p className="text-gray-600 mb-6">
-                We help organizations leverage emerging technologies to drive innovation and gain competitive advantage.
+                Access skilled IT professionals to enhance your team&apos;s capabilities.
               </p>
               <ul className="space-y-3 mb-6">
                 <li className="flex items-start">
                   <FiCheck className="text-[var(--primary-blue)] w-5 h-5 mr-2 mt-1" />
-                  <span>Technology roadmap development</span>
+                  <span>Skilled resource allocation</span>
                 </li>
                 <li className="flex items-start">
                   <FiCheck className="text-[var(--primary-blue)] w-5 h-5 mr-2 mt-1" />
-                  <span>Digital strategy and transformation</span>
+                  <span>Project-based staffing</span>
                 </li>
                 <li className="flex items-start">
                   <FiCheck className="text-[var(--primary-blue)] w-5 h-5 mr-2 mt-1" />
-                  <span>IT architecture and systems integration</span>
+                  <span>Flexible team scaling</span>
                 </li>
               </ul>
-              <Link href="/about" className="inline-flex items-center text-[var(--primary-blue)] font-medium hover:underline">
-                Learn More <FiArrowRight className="ml-2" />
-              </Link>
             </div>
 
             {/* Service 5 */}
@@ -180,27 +197,24 @@ export default function Home() {
               <div className="bg-[var(--primary-light-blue)] text-white p-3 rounded-full w-14 h-14 flex items-center justify-center mb-6">
                 <FiActivity className="w-7 h-7" />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-gray-800">Financial Advisory</h3>
+              <h3 className="text-xl font-bold mb-4 text-gray-800">Application Services</h3>
               <p className="text-gray-600 mb-6">
-                We provide financial insights and strategies to optimize financial performance and support strategic decision-making.
+                Comprehensive application development, modernization, and management solutions.
               </p>
               <ul className="space-y-3 mb-6">
                 <li className="flex items-start">
                   <FiCheck className="text-[var(--primary-blue)] w-5 h-5 mr-2 mt-1" />
-                  <span>Financial analysis and modeling</span>
+                  <span>Custom development</span>
                 </li>
                 <li className="flex items-start">
                   <FiCheck className="text-[var(--primary-blue)] w-5 h-5 mr-2 mt-1" />
-                  <span>Cost optimization strategies</span>
+                  <span>Application modernization</span>
                 </li>
                 <li className="flex items-start">
                   <FiCheck className="text-[var(--primary-blue)] w-5 h-5 mr-2 mt-1" />
-                  <span>Investment and funding strategies</span>
+                  <span>Maintenance & support</span>
                 </li>
               </ul>
-              <Link href="/about" className="inline-flex items-center text-[var(--primary-blue)] font-medium hover:underline">
-                Learn More <FiArrowRight className="ml-2" />
-              </Link>
             </div>
 
             {/* Service 6 */}
@@ -208,27 +222,24 @@ export default function Home() {
               <div className="bg-[var(--primary-light-blue)] text-white p-3 rounded-full w-14 h-14 flex items-center justify-center mb-6">
                 <FiGrid className="w-7 h-7" />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-gray-800">Cyber Security</h3>
+              <h3 className="text-xl font-bold mb-4 text-gray-800">Infrastructure Management</h3>
               <p className="text-gray-600 mb-6">
-                We help organizations protect their critical assets and information through comprehensive cyber security solutions.
+                End-to-end infrastructure solutions for optimal performance and reliability.
               </p>
               <ul className="space-y-3 mb-6">
                 <li className="flex items-start">
                   <FiCheck className="text-[var(--primary-blue)] w-5 h-5 mr-2 mt-1" />
-                  <span>Security assessments and risk management</span>
+                  <span>Cloud solutions</span>
                 </li>
                 <li className="flex items-start">
                   <FiCheck className="text-[var(--primary-blue)] w-5 h-5 mr-2 mt-1" />
-                  <span>Security strategy and roadmap development</span>
+                  <span>Network management</span>
                 </li>
                 <li className="flex items-start">
                   <FiCheck className="text-[var(--primary-blue)] w-5 h-5 mr-2 mt-1" />
-                  <span>Security awareness and training programs</span>
+                  <span>24/7 monitoring</span>
                 </li>
               </ul>
-              <Link href="/cyber-security" className="inline-flex items-center text-[var(--primary-blue)] font-medium hover:underline">
-                Learn More <FiArrowRight className="ml-2" />
-              </Link>
             </div>
           </div>
         </div>
@@ -250,7 +261,7 @@ export default function Home() {
             <div>
               <h2 className="section-title">Why Choose Stratos?</h2>
               <p className="text-gray-600 mb-8">
-                With years of industry experience and a team of seasoned consultants, we deliver exceptional results for our clients across various sectors.
+                We stand as a prominent industry frontrunner in technology consulting, delivering exceptional value through our comprehensive solutions and expertise.
               </p>
               
               <div className="space-y-6">
@@ -259,8 +270,8 @@ export default function Home() {
                     <FiCheck className="w-5 h-5" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold mb-2">Expert Team</h3>
-                    <p className="text-gray-600">Our consultants bring decades of experience across multiple industries and disciplines.</p>
+                    <h3 className="text-lg font-bold mb-2">Driven to Innovate</h3>
+                    <p className="text-gray-600">We constantly evolve and adapt to deliver cutting-edge solutions.</p>
                   </div>
                 </div>
                 
@@ -269,8 +280,8 @@ export default function Home() {
                     <FiCheck className="w-5 h-5" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold mb-2">Tailored Approach</h3>
-                    <p className="text-gray-600">We develop customized solutions that address your unique challenges and opportunities.</p>
+                    <h3 className="text-lg font-bold mb-2">Proven Expertise</h3>
+                    <p className="text-gray-600">Our team brings deep industry knowledge and technical excellence.</p>
                   </div>
                 </div>
                 
@@ -279,8 +290,8 @@ export default function Home() {
                     <FiCheck className="w-5 h-5" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold mb-2">Proven Results</h3>
-                    <p className="text-gray-600">Our track record speaks for itself, with measurable outcomes and satisfied clients.</p>
+                    <h3 className="text-lg font-bold mb-2">Client Success Focus</h3>
+                    <p className="text-gray-600">We measure our success through our clients&apos; achievements.</p>
                   </div>
                 </div>
                 
@@ -289,87 +300,69 @@ export default function Home() {
                     <FiCheck className="w-5 h-5" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold mb-2">Holistic Perspective</h3>
-                    <p className="text-gray-600">We consider all aspects of your business to deliver integrated, sustainable solutions.</p>
+                    <h3 className="text-lg font-bold mb-2">Global Reach</h3>
+                    <p className="text-gray-600">Supporting clients worldwide with local expertise.</p>
                   </div>
                 </div>
-              </div>
-              
-              <div className="mt-8">
-                <Link href="/about" className="btn-primary">
-                  Learn More About Us
-                </Link>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="py-20 bg-gray-50">
+      {/* Technologies Section */}
+      <section className="py-20 bg-gray-50">
         <div className="container-wide">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="section-title">Get in Touch</h2>
+            <h2 className="section-title">Technologies We Excel In</h2>
             <p className="text-lg text-gray-600">
-              Ready to transform your business? Contact us today to discuss how we can help you achieve your goals.
+              Our experts are proficient in a wide range of modern technologies and frameworks.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+            {['Angular', 'React.js', 'Vue.js', 'Node.js', 'Python', 'Java', 'AWS', 'DevOps', '.NET', 'Laravel', 'Flutter', 'Blockchain'].map((tech) => (
+              <div key={tech} className="flex items-center justify-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <span className="font-medium text-gray-800">{tech}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-20">
+        <div className="container-wide">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="section-title">Start Your Digital Journey</h2>
+            <p className="text-lg text-gray-600">
+              Ready to transform your business? Get in touch for a free consultation and discover how we can help you achieve your goals.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12">
             <div className="bg-[var(--primary-blue)] text-white p-10 rounded-lg">
-              <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
+              <h3 className="text-2xl font-bold mb-6">Why Partner With Us?</h3>
               <p className="mb-8">
-                Our team of consultants is ready to help you. Reach out to us using the contact form or the information below.
+                Experience the difference of working with a leading IT consulting partner committed to your success.
               </p>
               
               <div className="space-y-6">
-                <div className="flex items-start">
-                  <div className="mr-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-semibold mb-1">Address</h4>
-                    <p>123 Business Avenue, Suite 500<br />London, UK EC1A 1BB</p>
-                  </div>
+                <div className="flex items-center">
+                  <FiCheck className="w-5 h-5 mr-3" />
+                  <p>Certified IT consultants</p>
                 </div>
-                
-                <div className="flex items-start">
-                  <div className="mr-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-semibold mb-1">Phone</h4>
-                    <p>+44 20 1234 5678</p>
-                  </div>
+                <div className="flex items-center">
+                  <FiCheck className="w-5 h-5 mr-3" />
+                  <p>Flexible engagement models</p>
                 </div>
-                
-                <div className="flex items-start">
-                  <div className="mr-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-semibold mb-1">Email</h4>
-                    <p>info@stratos.com</p>
-                  </div>
+                <div className="flex items-center">
+                  <FiCheck className="w-5 h-5 mr-3" />
+                  <p>Transparent communication</p>
                 </div>
-                
-                <div className="flex items-start">
-                  <div className="mr-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-semibold mb-1">Office Hours</h4>
-                    <p>Monday - Friday: 9:00 AM - 5:30 PM</p>
-                  </div>
+                <div className="flex items-center">
+                  <FiCheck className="w-5 h-5 mr-3" />
+                  <p>Guaranteed satisfaction</p>
                 </div>
               </div>
             </div>
