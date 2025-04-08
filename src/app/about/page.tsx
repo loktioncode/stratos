@@ -166,9 +166,9 @@ export default function About() {
       <section id="our-team" className="py-20">
         <div className="container-wide">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="section-title">Meet Our Leadership Team</h2>
+            <h2 className="section-title">Meet Our Team</h2>
             <p className="text-lg text-gray-600">
-              Our experienced leadership team brings together diverse expertise across business strategy, technology, and cyber security.
+              Our experienced team brings together diverse expertise across business strategy, technology, and cyber security.
             </p>
           </div>
 
