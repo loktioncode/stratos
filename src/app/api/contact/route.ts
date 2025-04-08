@@ -25,15 +25,17 @@ export async function POST(request: Request) {
       );
     }
 
-    // Email content
+    // Email content - sent from user to Stratos
     const mailOptions = {
-      from: process.env.SMTP_FROM_EMAIL,
+      from: {
+        name: name,
+        address: email
+      },
       to: process.env.SMTP_TO_EMAIL,
-      subject: `New Contact Form Submission: ${subject}`,
+      subject: `Contact Form: ${subject}`,
       html: `
         <h2>New Contact Form Submission</h2>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>From:</strong> ${name} (${email})</p>
         <p><strong>Phone:</strong> ${phone || 'Not provided'}</p>
         <p><strong>Subject:</strong> ${subject}</p>
         <p><strong>Message:</strong></p>
