@@ -19,7 +19,7 @@ export default function CyberSecurity() {
                 Comprehensive Cyber Security Solutions
               </h1>
               <p className="text-lg md:text-xl opacity-90 mb-8">
-                Protect your organization's critical assets with our advanced cyber security services. We help you identify, prevent, and respond to cyber threats.
+                Protect your organization&apos;s critical assets with our advanced cyber security services. We help you identify, prevent, and respond to cyber threats.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link 
@@ -68,7 +68,7 @@ export default function CyberSecurity() {
             <div className="order-1 md:order-2">
               <h2 className="section-title">Proactive Cyber Security for Modern Businesses</h2>
               <p className="text-gray-600 mb-6">
-                In today's digital landscape, cyber threats are constantly evolving. Stratos helps organizations stay ahead of threats with comprehensive cyber security solutions designed to protect your most valuable assets.
+                In today&apos;s digital landscape, cyber threats are constantly evolving. Stratos helps organizations stay ahead of threats with comprehensive cyber security solutions designed to protect your most valuable assets.
               </p>
               <p className="text-gray-600 mb-8">
                 Our team of certified security professionals uses industry-leading methodologies and tools to assess, implement, and manage security controls that safeguard your organization from cyber threats.
@@ -177,7 +177,7 @@ export default function CyberSecurity() {
               </div>
               <h3 className="text-xl font-bold mb-4 text-gray-800">Security Risk Assessment</h3>
               <p className="text-gray-600 mb-6">
-                Identify and evaluate potential security threats and vulnerabilities within your organization's environment.
+                Identify and evaluate potential security threats and vulnerabilities within your organization&apos;s environment.
               </p>
               <ul className="space-y-3 mb-6">
                 <li className="flex items-start">
@@ -339,7 +339,7 @@ export default function CyberSecurity() {
             <div className="bg-[var(--primary-blue)] text-white p-10 rounded-lg">
               <h3 className="text-2xl font-bold mb-6">Get Started with a Security Assessment</h3>
               <p className="mb-8">
-                Our security experts are ready to help you identify and address your organization's security challenges. Contact us today to schedule a consultation.
+                Our security experts are ready to help you identify and address your organization&apos;s security challenges. Contact us today to schedule a consultation.
               </p>
               
               <div className="space-y-6">

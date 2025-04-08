@@ -320,7 +320,7 @@ export default function Home() {
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="section-title text-white">Maximizing Business Efficiency</h2>
             <p className="text-lg text-white/90">
-              In today's fast-paced business world, swift and responsive IT support is crucial. Our dedicated team of IT professionals understands the pivotal role of timely problem-solving in ensuring your operations run seamlessly.
+              In today&apos;s fast-paced business world, swift and responsive IT support is crucial. Our dedicated team of IT professionals understands the pivotal role of timely problem-solving in ensuring your operations run seamlessly.
             </p>
           </div>
 
