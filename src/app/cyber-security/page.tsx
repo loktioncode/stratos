@@ -16,10 +16,10 @@ export default function CyberSecurity() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-                Protect your organization&apos;s critical assets with our advanced cyber security services
+                Comprehensive Cyber Security Solutions
               </h1>
               <p className="text-lg md:text-xl opacity-90 mb-8">
-                Protect your organization&apos;s critical assets with our advanced cyber security services. We help you identify, prevent, and respond to cyber threats.
+                Protect your organization's critical assets with our advanced cyber security services. We help you identify, prevent, and respond to cyber threats.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link 
@@ -53,7 +53,7 @@ export default function CyberSecurity() {
       </section>
 
       {/* Cyber Security Overview */}
-      <section className="py-20">
+      <section className="pt-20 pb-10">
         <div className="container-wide">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1 relative h-[500px]">
@@ -68,7 +68,7 @@ export default function CyberSecurity() {
             <div className="order-1 md:order-2">
               <h2 className="section-title">Proactive Cyber Security for Modern Businesses</h2>
               <p className="text-gray-600 mb-6">
-                In today&apos;s digital landscape, cyber threats are constantly evolving. Stratos helps organizations stay ahead of threats with comprehensive cyber security solutions designed to protect your most valuable assets.
+                In today's digital landscape, cyber threats are constantly evolving. Stratos helps organizations stay ahead of threats with comprehensive cyber security solutions designed to protect your most valuable assets.
               </p>
               <p className="text-gray-600 mb-8">
                 Our team of certified security professionals uses industry-leading methodologies and tools to assess, implement, and manage security controls that safeguard your organization from cyber threats.
@@ -97,6 +97,68 @@ export default function CyberSecurity() {
         </div>
       </section>
 
+       {/* Why Choose Us Section */}
+       <section className="py-20">
+        <div className="container-wide">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="section-title">Why Choose Stratos for Cyber Security?</h2>
+            <p className="text-lg text-gray-600">
+              Our approach to cyber security combines deep technical expertise with a thorough understanding of business objectives.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="card text-center bg-[var(--primary-blue)] text-white hover:border-white hover:border transition-all">
+              <div className="bg-white text-[var(--primary-blue)] p-3 rounded-full w-14 h-14 flex items-center justify-center mx-auto mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold mb-4">Certified Experts</h3>
+              <p>
+                Our team of security professionals holds leading industry certifications and stays current with emerging threats.
+              </p>
+            </div>
+
+            <div className="card text-center bg-[var(--primary-blue)] text-white hover:border-white hover:border transition-all">
+              <div className="bg-white text-[var(--primary-blue)] p-3 rounded-full w-14 h-14 flex items-center justify-center mx-auto mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold mb-4">Proven Methodology</h3>
+              <p>
+                We apply industry-standard frameworks and methodologies tailored to your specific business needs.
+              </p>
+            </div>
+
+            <div className="card text-center bg-[var(--primary-blue)] text-white hover:border-white hover:border transition-all">
+              <div className="bg-white text-[var(--primary-blue)] p-3 rounded-full w-14 h-14 flex items-center justify-center mx-auto mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold mb-4">Rapid Response</h3>
+              <p>
+                Our 24/7 security operations center provides immediate response to security incidents when they occur.
+              </p>
+            </div>
+
+            <div className="card text-center bg-[var(--primary-blue)] text-white hover:border-white hover:border transition-all">
+              <div className="bg-white text-[var(--primary-blue)] p-3 rounded-full w-14 h-14 flex items-center justify-center mx-auto mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold mb-4">Comprehensive Reporting</h3>
+              <p>
+                We provide detailed security reports with actionable insights to help you make informed security decisions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section id="security-services" className="py-20 bg-gray-50">
         <div className="container-wide">
@@ -115,7 +177,7 @@ export default function CyberSecurity() {
               </div>
               <h3 className="text-xl font-bold mb-4 text-gray-800">Security Risk Assessment</h3>
               <p className="text-gray-600 mb-6">
-                Identify and evaluate potential security threats and vulnerabilities within your organization&apos;s environment.
+                Identify and evaluate potential security threats and vulnerabilities within your organization's environment.
               </p>
               <ul className="space-y-3 mb-6">
                 <li className="flex items-start">
@@ -261,67 +323,7 @@ export default function CyberSecurity() {
         </div>
       </section>
 
-      {/* Why Choose Us Section */}
-      <section className="py-20">
-        <div className="container-wide">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="section-title">Why Choose Stratos for Cyber Security?</h2>
-            <p className="text-lg text-gray-600">
-              Our approach to cyber security combines deep technical expertise with a thorough understanding of business objectives.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="card text-center hover:border-[var(--primary-blue)] hover:border transition-all">
-              <div className="bg-[var(--primary-light-blue)] text-white p-3 rounded-full w-14 h-14 flex items-center justify-center mx-auto mb-6">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold mb-4 text-gray-800">Certified Experts</h3>
-              <p className="text-gray-600">
-                Our team of security professionals holds leading industry certifications and stays current with emerging threats.
-              </p>
-            </div>
-
-            <div className="card text-center hover:border-[var(--primary-blue)] hover:border transition-all">
-              <div className="bg-[var(--primary-light-blue)] text-white p-3 rounded-full w-14 h-14 flex items-center justify-center mx-auto mb-6">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold mb-4 text-gray-800">Proven Methodology</h3>
-              <p className="text-gray-600">
-                We apply industry-standard frameworks and methodologies tailored to your specific business needs.
-              </p>
-            </div>
-
-            <div className="card text-center hover:border-[var(--primary-blue)] hover:border transition-all">
-              <div className="bg-[var(--primary-light-blue)] text-white p-3 rounded-full w-14 h-14 flex items-center justify-center mx-auto mb-6">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold mb-4 text-gray-800">Rapid Response</h3>
-              <p className="text-gray-600">
-                Our 24/7 security operations center provides immediate response to security incidents when they occur.
-              </p>
-            </div>
-
-            <div className="card text-center hover:border-[var(--primary-blue)] hover:border transition-all">
-              <div className="bg-[var(--primary-light-blue)] text-white p-3 rounded-full w-14 h-14 flex items-center justify-center mx-auto mb-6">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold mb-4 text-gray-800">Comprehensive Reporting</h3>
-              <p className="text-gray-600">
-                We provide detailed security reports with actionable insights to help you make informed security decisions.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+     
 
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-gray-50">
@@ -337,7 +339,7 @@ export default function CyberSecurity() {
             <div className="bg-[var(--primary-blue)] text-white p-10 rounded-lg">
               <h3 className="text-2xl font-bold mb-6">Get Started with a Security Assessment</h3>
               <p className="mb-8">
-                Our security experts are ready to help you identify and address your organization&apos;s security challenges. Contact us today to schedule a consultation.
+                Our security experts are ready to help you identify and address your organization's security challenges. Contact us today to schedule a consultation.
               </p>
               
               <div className="space-y-6">
