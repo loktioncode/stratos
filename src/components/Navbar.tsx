@@ -148,7 +148,8 @@ const Navbar = () => {
                 About Us
               </Link>
               <Link 
-                href="/#contact" 
+                href="https://calendly.com/"
+                target="_blank"
                 className={`btn-primary inline-block text-center ${
                   isScrolled 
                     ? 'bg-white text-[var(--primary-blue)] hover:bg-gray-100' 
@@ -156,7 +157,7 @@ const Navbar = () => {
                 }`}
                 onClick={() => setIsOpen(false)}
               >
-                Contact Us
+                Book a Call
               </Link>
             </div>
           </div>
