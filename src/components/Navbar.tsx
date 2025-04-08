@@ -2,11 +2,13 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { FiMenu, FiX } from 'react-icons/fi';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,6 +28,13 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const isActive = (path: string) => {
+    if (path === '/') {
+      return pathname === path;
+    }
+    return pathname.startsWith(path);
+  };
+
   return (
     <nav className={`fixed w-full top-0 z-50 transition-all duration-300 ${
       isScrolled 
@@ -41,43 +50,43 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex items-center space-x-8">
             <Link 
               href="/" 
-              className={`font-medium transition-colors ${
+              className={`font-medium transition-colors focus:font-bold focus:text-[var(--primary-blue)] ${
                 isScrolled 
-                  ? 'text-white/90 hover:text-white' 
-                  : 'text-gray-700 hover:text-[var(--primary-blue)]'
+                  ? `text-white/90 hover:text-white focus:text-white ${isActive('/') ? 'text-white font-bold' : ''}` 
+                  : `text-gray-700 hover:text-[var(--primary-blue)] ${isActive('/') ? 'text-[var(--primary-blue)] font-bold' : ''}`
               }`}
             >
               Home
             </Link>
             <Link 
               href="/cyber-security" 
-              className={`font-medium transition-colors ${
+              className={`font-medium transition-colors focus:font-bold focus:text-[var(--primary-blue)] ${
                 isScrolled 
-                  ? 'text-white/90 hover:text-white' 
-                  : 'text-gray-700 hover:text-[var(--primary-blue)]'
+                  ? `text-white/90 hover:text-white focus:text-white ${isActive('/cyber-security') ? 'text-white font-bold' : ''}` 
+                  : `text-gray-700 hover:text-[var(--primary-blue)] ${isActive('/cyber-security') ? 'text-[var(--primary-blue)] font-bold' : ''}`
               }`}
             >
               Cyber Security
             </Link>
             <Link 
               href="/about" 
-              className={`font-medium transition-colors ${
+              className={`font-medium transition-colors focus:font-bold focus:text-[var(--primary-blue)] ${
                 isScrolled 
-                  ? 'text-white/90 hover:text-white' 
-                  : 'text-gray-700 hover:text-[var(--primary-blue)]'
+                  ? `text-white/90 hover:text-white focus:text-white ${isActive('/about') ? 'text-white font-bold' : ''}` 
+                  : `text-gray-700 hover:text-[var(--primary-blue)] ${isActive('/about') ? 'text-[var(--primary-blue)] font-bold' : ''}`
               }`}
             >
               About Us
             </Link>
             <Link 
               href="/#contact" 
-              className={`btn-primary ${
+              className={`btn-primary font-bold ${
                 isScrolled 
-                  ? 'bg-white text-[var(--primary-blue)] hover:bg-gray-100' 
-                  : 'bg-[var(--primary-blue)] text-white hover:bg-[var(--primary-dark-blue)]'
+                  ? 'bg-white text-[var(--primary-blue)] hover:bg-gray-100 focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[var(--primary-blue)]' 
+                  : 'bg-[var(--primary-blue)] text-white hover:bg-[var(--primary-dark-blue)] focus:ring-2 focus:ring-[var(--primary-blue)] focus:ring-offset-2 focus:ring-offset-white'
               }`}
             >
               Contact Us

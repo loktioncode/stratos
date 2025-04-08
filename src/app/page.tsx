@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from 'next/link';
-import { FiCheck, FiBarChart2, FiTrendingUp, FiUsers, FiTarget, FiActivity, FiGrid, FiClock, FiShield } from 'react-icons/fi';
+import { FiCheck, FiBarChart2, FiTrendingUp, FiUsers, FiTarget, FiActivity, FiGrid, FiClock, FiShield, FiGlobe } from 'react-icons/fi';
 import ContactForm from '@/components/ContactForm';
 
 export default function Home() {
@@ -85,7 +85,7 @@ export default function Home() {
       <section id="services" className="py-20 bg-gray-50">
         <div className="container-wide">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="section-title">Our Professional IT Consulting Services</h2>
+            <h2 className="section-title">PROFESSIONAL CONSULTANTS</h2>
             <p className="text-lg text-gray-600">
               Our IT consulting experts ensure your business excels in today&apos;s digital world. We optimize systems, enhance cybersecurity, and streamline IT processes for exceptional results.
             </p>
@@ -310,25 +310,273 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Technologies Section */}
+      {/* IT Support Services Section */}
+      <section className="py-20 relative bg-gradient-to-r from-[var(--primary-dark-blue)] to-[var(--primary-blue)] text-white">
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute inset-0 bg-[url('/images/grid-pattern.svg')] opacity-10"></div>
+        </div>
+
+        <div className="container-wide relative z-10">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="section-title text-white">Maximizing Business Efficiency</h2>
+            <p className="text-lg text-white/90">
+              In today's fast-paced business world, swift and responsive IT support is crucial. Our dedicated team of IT professionals understands the pivotal role of timely problem-solving in ensuring your operations run seamlessly.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
+            <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+              <div className="bg-[var(--primary-light-blue)] text-white p-3 rounded-full w-14 h-14 flex items-center justify-center mb-6">
+                <FiUsers className="w-7 h-7" />
+              </div>
+              <h3 className="text-xl font-bold mb-4 text-gray-800">Tier 1 Support</h3>
+              <p className="text-gray-600 mb-4">
+                Your first line of defense for common IT issues, including password resets, software installations, and general troubleshooting.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+              <div className="bg-[var(--primary-light-blue)] text-white p-3 rounded-full w-14 h-14 flex items-center justify-center mb-6">
+                <FiActivity className="w-7 h-7" />
+              </div>
+              <h3 className="text-xl font-bold mb-4 text-gray-800">Tier 2 Support</h3>
+              <p className="text-gray-600 mb-4">
+                Specialized solutions for complex technical challenges, with in-depth knowledge of your IT systems.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+              <div className="bg-[var(--primary-light-blue)] text-white p-3 rounded-full w-14 h-14 flex items-center justify-center mb-6">
+                <FiShield className="w-7 h-7" />
+              </div>
+              <h3 className="text-xl font-bold mb-4 text-gray-800">Tier 3 Support</h3>
+              <p className="text-gray-600 mb-4">
+                Advanced problem-solving for complex and critical IT issues, with collaboration from our expert team.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Business Solutions Section */}
+      <section className="py-20">
+        <div className="container-wide">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="section-title">Comprehensive IT Solutions</h2>
+            <p className="text-lg text-gray-600">
+              We provide comprehensive, strategically aligned IT services to foster synergy within your business environment.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-[var(--primary-blue)] text-white p-8 rounded-lg shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="bg-white text-[var(--primary-blue)] p-3 rounded-full w-14 h-14 flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110">
+                <FiGrid className="w-7 h-7" />
+              </div>
+              <h3 className="text-xl font-bold mb-4">Fully Managed IT</h3>
+              <p className="text-white/90">
+                Enhance your business operations with our top-tier IT management services, backed by cutting-edge tools and expert guidance.
+              </p>
+            </div>
+
+            <div className="bg-[var(--primary-blue)] text-white p-8 rounded-lg shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="bg-white text-[var(--primary-blue)] p-3 rounded-full w-14 h-14 flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110">
+                <FiShield className="w-7 h-7" />
+              </div>
+              <h3 className="text-xl font-bold mb-4">Cybersecurity Solutions</h3>
+              <p className="text-white/90">
+                Protect your business from cyber threats with our comprehensive security solutions and advanced protection measures.
+              </p>
+            </div>
+
+            <div className="bg-[var(--primary-blue)] text-white p-8 rounded-lg shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="bg-white text-[var(--primary-blue)] p-3 rounded-full w-14 h-14 flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110">
+                <FiGlobe className="w-7 h-7" />
+              </div>
+              <h3 className="text-xl font-bold mb-4">Cloud Services</h3>
+              <p className="text-white/90">
+                Leverage the power of cloud computing with our migration, management, and optimization services.
+              </p>
+            </div>
+
+            <div className="bg-[var(--primary-blue)] text-white p-8 rounded-lg shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="bg-white text-[var(--primary-blue)] p-3 rounded-full w-14 h-14 flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110">
+                <FiClock className="w-7 h-7" />
+              </div>
+              <h3 className="text-xl font-bold mb-4">Remote IT Support</h3>
+              <p className="text-white/90">
+                Get instant support anywhere with our remote IT assistance, ensuring quick resolution of technology issues.
+              </p>
+            </div>
+
+            <div className="bg-[var(--primary-blue)] text-white p-8 rounded-lg shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="bg-white text-[var(--primary-blue)] p-3 rounded-full w-14 h-14 flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110">
+                <FiTarget className="w-7 h-7" />
+              </div>
+              <h3 className="text-xl font-bold mb-4">IT Strategy & Planning</h3>
+              <p className="text-white/90">
+                Build a strong technology foundation with comprehensive IT strategies aligned with your business goals.
+              </p>
+            </div>
+
+            <div className="bg-[var(--primary-blue)] text-white p-8 rounded-lg shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="bg-white text-[var(--primary-blue)] p-3 rounded-full w-14 h-14 flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110">
+                <FiCheck className="w-7 h-7" />
+              </div>
+              <h3 className="text-xl font-bold mb-4">Business Continuity</h3>
+              <p className="text-white/90">
+                Prepare your business for any disruption with our comprehensive continuity planning services.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Technologies Section - Commented out for now
       <section className="py-20 bg-gray-50">
         <div className="container-wide">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="section-title">Technologies We Excel In</h2>
             <p className="text-lg text-gray-600">
-              Our experts are proficient in a wide range of modern technologies and frameworks.
+              We leverage cutting-edge technologies and tools to deliver exceptional results for our clients.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 mb-16">
+            <div className="flex flex-col items-center justify-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <Image
+                src="/images/tech-logos/aws.svg"
+                alt="AWS"
+                width={80}
+                height={80}
+                className="h-12 w-auto mb-4"
+              />
+              <span className="text-sm font-medium text-gray-700">AWS</span>
+            </div>
+            <div className="flex flex-col items-center justify-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <Image
+                src="/images/tech-logos/azure.svg"
+                alt="Azure"
+                width={80}
+                height={80}
+                className="h-12 w-auto mb-4"
+              />
+              <span className="text-sm font-medium text-gray-700">Azure</span>
+            </div>
+            <div className="flex flex-col items-center justify-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <Image
+                src="/images/tech-logos/kubernetes.svg"
+                alt="Kubernetes"
+                width={80}
+                height={80}
+                className="h-12 w-auto mb-4"
+              />
+              <span className="text-sm font-medium text-gray-700">Kubernetes</span>
+            </div>
+            <div className="flex flex-col items-center justify-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <Image
+                src="/images/tech-logos/docker.svg"
+                alt="Docker"
+                width={80}
+                height={80}
+                className="h-12 w-auto mb-4"
+              />
+              <span className="text-sm font-medium text-gray-700">Docker</span>
+            </div>
+            <div className="flex flex-col items-center justify-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <Image
+                src="/images/tech-logos/react.svg"
+                alt="React"
+                width={80}
+                height={80}
+                className="h-12 w-auto mb-4"
+              />
+              <span className="text-sm font-medium text-gray-700">React</span>
+            </div>
+            <div className="flex flex-col items-center justify-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <Image
+                src="/images/tech-logos/nodejs.svg"
+                alt="Node.js"
+                width={80}
+                height={80}
+                className="h-12 w-auto mb-4"
+              />
+              <span className="text-sm font-medium text-gray-700">Node.js</span>
+            </div>
+          </div>
+
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="section-title">Cyber Security Tools</h2>
+            <p className="text-lg text-gray-600">
+              Our security experts utilize industry-leading tools to protect your digital assets.
             </p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
-            {['Angular', 'React.js', 'Vue.js', 'Node.js', 'Python', 'Java', 'AWS', 'DevOps', '.NET', 'Laravel', 'Flutter', 'Blockchain'].map((tech) => (
-              <div key={tech} className="flex items-center justify-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                <span className="font-medium text-gray-800">{tech}</span>
-              </div>
-            ))}
+            <div className="flex flex-col items-center justify-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <Image
+                src="/images/tech-logos/nessus.svg"
+                alt="Nessus"
+                width={80}
+                height={80}
+                className="h-12 w-auto mb-4"
+              />
+              <span className="text-sm font-medium text-gray-700">Nessus</span>
+            </div>
+            <div className="flex flex-col items-center justify-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <Image
+                src="/images/tech-logos/metasploit.svg"
+                alt="Metasploit"
+                width={80}
+                height={80}
+                className="h-12 w-auto mb-4"
+              />
+              <span className="text-sm font-medium text-gray-700">Metasploit</span>
+            </div>
+            <div className="flex flex-col items-center justify-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <Image
+                src="/images/tech-logos/wireshark.svg"
+                alt="Wireshark"
+                width={80}
+                height={80}
+                className="h-12 w-auto mb-4"
+              />
+              <span className="text-sm font-medium text-gray-700">Wireshark</span>
+            </div>
+            <div className="flex flex-col items-center justify-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <Image
+                src="/images/tech-logos/burp.svg"
+                alt="Burp Suite"
+                width={80}
+                height={80}
+                className="h-12 w-auto mb-4"
+              />
+              <span className="text-sm font-medium text-gray-700">Burp Suite</span>
+            </div>
+            <div className="flex flex-col items-center justify-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <Image
+                src="/images/tech-logos/nmap.svg"
+                alt="Nmap"
+                width={80}
+                height={80}
+                className="h-12 w-auto mb-4"
+              />
+              <span className="text-sm font-medium text-gray-700">Nmap</span>
+            </div>
+            <div className="flex flex-col items-center justify-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <Image
+                src="/images/tech-logos/splunk.svg"
+                alt="Splunk"
+                width={80}
+                height={80}
+                className="h-12 w-auto mb-4"
+              />
+              <span className="text-sm font-medium text-gray-700">Splunk</span>
+            </div>
           </div>
         </div>
       </section>
+      */}
 
       {/* Contact Section */}
       <section id="contact" className="py-20">
