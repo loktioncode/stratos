@@ -46,7 +46,7 @@ const Navbar = () => {
           <Link href="/" className="flex items-center">
             <span className={`text-2xl font-bold ${
               isScrolled ? 'text-white' : 'text-[var(--primary-blue)]'
-            }`}>STRATOS</span>
+            }`}>STRATOS DIGITAL</span>
           </Link>
 
           {/* Desktop Navigation */}

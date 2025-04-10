@@ -3,12 +3,12 @@ import { FiPhone, FiMail, FiMapPin, FiLinkedin, FiTwitter, FiFacebook, FiInstagr
 
 const Footer = () => {
   return (
-    <footer className="bg-[var(--primary-dark-blue)] text-white pt-12 pb-6">
+    <footer className="bg-[var(--primary-blue)] text-white pt-12 pb-6">
       <div className="container-wide">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-bold mb-4">STRATOS</h3>
+            <h3 className="text-xl font-bold mb-4">STRATOS DIGITAL</h3>
             <p className="mb-4">Providing expert business consultancy and cyber security services to help organizations navigate the complexities of modern business.</p>
             <div className="flex space-x-4">
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--primary-light-blue)] transition-colors">
@@ -40,9 +40,6 @@ const Footer = () => {
                 <Link href="/about" className="hover:text-[var(--primary-light-blue)] transition-colors">About Us</Link>
               </li>
               <li>
-                <Link href="/#services" className="hover:text-[var(--primary-light-blue)] transition-colors">Services</Link>
-              </li>
-              <li>
                 <Link href="/#contact" className="hover:text-[var(--primary-light-blue)] transition-colors">Contact</Link>
               </li>
             </ul>
@@ -53,16 +50,16 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-4">Our Services</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/#strategic-consulting" className="hover:text-[var(--primary-light-blue)] transition-colors">Strategic Consulting</Link>
+                <Link href="/#services" className="hover:text-[var(--primary-light-blue)] transition-colors">Strategic Consulting</Link>
               </li>
               <li>
-                <Link href="/#business-transformation" className="hover:text-[var(--primary-light-blue)] transition-colors">Business Transformation</Link>
+                <Link href="/#services" className="hover:text-[var(--primary-light-blue)] transition-colors">Business Transformation</Link>
               </li>
               <li>
-                <Link href="/cyber-security#risk-assessment" className="hover:text-[var(--primary-light-blue)] transition-colors">Cyber Risk Assessment</Link>
+                <Link href="/cyber-security#security-services" className="hover:text-[var(--primary-light-blue)] transition-colors">Cyber Security Services</Link>
               </li>
               <li>
-                <Link href="/cyber-security#security-solutions" className="hover:text-[var(--primary-light-blue)] transition-colors">Security Solutions</Link>
+                <Link href="/cyber-security#contact" className="hover:text-[var(--primary-light-blue)] transition-colors">Security Assessment</Link>
               </li>
             </ul>
           </div>
@@ -73,15 +70,15 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <FiMapPin className="w-5 h-5 mr-2 mt-1" />
-                <span>123 Business Avenue, Suite 500<br />London, UK EC1A 1BB</span>
+                <span>Office No 227<br />Oud Metha Rd<br />Dubai, United Arab Emirates</span>
               </li>
               <li className="flex items-center">
                 <FiPhone className="w-5 h-5 mr-2" />
-                <span>+44 20 1234 5678</span>
+                <span>050 861 1334</span>
               </li>
               <li className="flex items-center">
                 <FiMail className="w-5 h-5 mr-2" />
-                <span>info@stratos.com</span>
+                <span>info@stratos.digital</span>
               </li>
             </ul>
           </div>
