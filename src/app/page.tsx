@@ -32,7 +32,7 @@ export default function Home() {
                   href="#contact" 
                   className="btn-primary border border-white hover:bg-white hover:text-[var(--primary-blue)]"
                 >
-                  Start Free Trial
+                  Contact Us
                 </Link>
               </div>
             </div>
@@ -66,8 +66,8 @@ export default function Home() {
             <div className="flex items-center space-x-4 p-6 bg-gray-50 rounded-lg">
               <FiCheck className="w-8 h-8 text-[var(--primary-blue)]" />
               <div>
-                <h3 className="font-bold">15 Days Risk-Free Trial</h3>
-                <p className="text-gray-600">Try our services risk-free</p>
+                <h3 className="font-bold">Expert Support</h3>
+                <p className="text-gray-600">Professional assistance</p>
               </div>
             </div>
             <div className="flex items-center space-x-4 p-6 bg-gray-50 rounded-lg">
