@@ -28,12 +28,6 @@ export default function About() {
                 >
                   Our Story
                 </Link>
-                <Link 
-                  href="#our-team" 
-                  className="btn-primary border border-white hover:bg-white hover:text-[var(--primary-blue)]"
-                >
-                  Meet Our Team
-                </Link>
               </div>
             </div>
             <div className="relative">
@@ -68,7 +62,7 @@ export default function About() {
             <div>
               <h2 className="section-title">Our Story</h2>
               <p className="text-gray-600 mb-6">
-                Founded in 2010, Stratos began with a vision to transform how businesses approach strategic challenges and cyber security risks. What started as a small team of passionate consultants has grown into a leading consultancy firm serving clients across multiple industries.
+                Founded in 2022, Stratos began with a vision to transform how businesses approach strategic challenges and cyber security risks. What started as a small team of passionate consultants has grown into a leading consultancy firm serving clients across multiple industries.
               </p>
               <p className="text-gray-600 mb-8">
                 Our journey has been marked by continuous innovation, a commitment to excellence, and a deep understanding of the evolving business landscape. Today, we are proud to be trusted advisors to organizations of all sizes, helping them navigate complex challenges and capitalize on emerging opportunities.
