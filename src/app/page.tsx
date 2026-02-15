@@ -22,14 +22,14 @@ export default function Home() {
                 Stratos is a leading IT consulting services provider renowned for delivering tailor-made solutions to businesses of all sizes. Get 2X faster delivery and save up to 40% on cost!
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link 
-                  href="#services" 
+                <Link
+                  href="#services"
                   className="btn-primary bg-white text-[var(--primary-blue)] hover:bg-gray-100"
                 >
                   Explore Services
                 </Link>
-                <Link 
-                  href="#contact" 
+                <Link
+                  href="#contact"
                   className="btn-primary border border-white hover:bg-white hover:text-[var(--primary-blue)]"
                 >
                   Contact Us
@@ -39,9 +39,10 @@ export default function Home() {
             <div className="relative">
               <div className="relative h-[400px] rounded-lg overflow-hidden">
                 <Image
-                  src="/images/diverse-business-team.jpg"
+                  src="/images/diverse-business-team.webp"
                   alt="Diverse business team"
                   fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   style={{ objectFit: 'cover' }}
                   className="rounded-lg"
                   priority
@@ -251,9 +252,10 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative h-[500px]">
               <Image
-                src="/images/diverse-meeting.jpg"
+                src="/images/diverse-meeting.webp"
                 alt="Diverse business meeting"
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
                 className="rounded-lg"
               />
@@ -263,7 +265,7 @@ export default function Home() {
               <p className="text-gray-600 mb-8">
                 We stand as a prominent industry frontrunner in technology consulting, delivering exceptional value through our comprehensive solutions and expertise.
               </p>
-              
+
               <div className="space-y-6">
                 <div className="flex items-start">
                   <div className="bg-[var(--primary-light-blue)] text-white p-2 rounded-full w-10 h-10 flex items-center justify-center mr-4">
@@ -274,7 +276,7 @@ export default function Home() {
                     <p className="text-gray-600">We constantly evolve and adapt to deliver cutting-edge solutions.</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start">
                   <div className="bg-[var(--primary-light-blue)] text-white p-2 rounded-full w-10 h-10 flex items-center justify-center mr-4">
                     <FiCheck className="w-5 h-5" />
@@ -284,7 +286,7 @@ export default function Home() {
                     <p className="text-gray-600">Our team brings deep industry knowledge and technical excellence.</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start">
                   <div className="bg-[var(--primary-light-blue)] text-white p-2 rounded-full w-10 h-10 flex items-center justify-center mr-4">
                     <FiCheck className="w-5 h-5" />
@@ -294,7 +296,7 @@ export default function Home() {
                     <p className="text-gray-600">We measure our success through our clients&apos; achievements.</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start">
                   <div className="bg-[var(--primary-light-blue)] text-white p-2 rounded-full w-10 h-10 flex items-center justify-center mr-4">
                     <FiCheck className="w-5 h-5" />
@@ -594,7 +596,7 @@ export default function Home() {
               <p className="mb-8">
                 Experience the difference of working with a leading IT consulting partner committed to your success.
               </p>
-              
+
               <div className="space-y-6">
                 <div className="flex items-center">
                   <FiCheck className="w-5 h-5 mr-3" />
@@ -614,7 +616,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            
+
             <ContactForm />
           </div>
         </div>

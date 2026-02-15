@@ -22,8 +22,8 @@ export default function About() {
                 We are a team of experienced consultants dedicated to helping businesses achieve their full potential through strategic consultancy and cyber security services.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link 
-                  href="#our-story" 
+                <Link
+                  href="#our-story"
                   className="btn-primary bg-white text-[var(--primary-blue)] hover:bg-gray-100"
                 >
                   Our Story
@@ -33,9 +33,10 @@ export default function About() {
             <div className="relative">
               <div className="relative h-[400px] rounded-lg overflow-hidden">
                 <Image
-                  src="/images/about-team.jpg"
+                  src="/images/about-team.webp"
                   alt="Stratos team"
                   fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   style={{ objectFit: 'cover' }}
                   className="rounded-lg"
                   priority
@@ -52,9 +53,10 @@ export default function About() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative h-[500px]">
               <Image
-                src="/images/about-story.jpg"
+                src="/images/about-story.webp"
                 alt="Stratos history"
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
                 className="rounded-lg"
               />
@@ -67,7 +69,7 @@ export default function About() {
               <p className="text-gray-600 mb-8">
                 Our journey has been marked by continuous innovation, a commitment to excellence, and a deep understanding of the evolving business landscape. Today, we are proud to be trusted advisors to organizations of all sizes, helping them navigate complex challenges and capitalize on emerging opportunities.
               </p>
-              
+
               <div className="space-y-6">
                 <div className="flex items-start">
                   <div className="bg-[var(--primary-light-blue)] text-white p-2 rounded-full w-10 h-10 flex items-center justify-center mr-4">
@@ -78,7 +80,7 @@ export default function About() {
                     <p className="text-gray-600">To empower organizations to achieve sustainable growth through strategic guidance and robust security solutions.</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start">
                   <div className="bg-[var(--primary-light-blue)] text-white p-2 rounded-full w-10 h-10 flex items-center justify-center mr-4">
                     <FiGlobe className="w-5 h-5" />
@@ -170,7 +172,7 @@ export default function About() {
               <p className="text-gray-600 mb-8">
                 Our approach combines proven methodologies with innovative thinking to deliver tailored solutions that address your specific needs and drive tangible results.
               </p>
-              
+
               <div className="space-y-4">
                 <div className="flex items-start">
                   <FiCheck className="text-[var(--primary-blue)] w-5 h-5 mr-3 mt-1" />
@@ -194,12 +196,13 @@ export default function About() {
                 </div>
               </div>
             </div>
-            
+
             <div className="relative h-[500px]">
               <Image
-                src="/images/diverse-approach.jpg"
+                src="/images/diverse-approach.webp"
                 alt="Our collaborative approach"
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
                 className="rounded-lg"
               />
@@ -224,7 +227,7 @@ export default function About() {
               <p className="mb-8">
                 Partner with Stratos and benefit from our proven track record of helping organizations overcome challenges and achieve sustainable growth.
               </p>
-              
+
               <div className="space-y-6">
                 <div className="flex items-start">
                   <div className="bg-white text-[var(--primary-blue)] p-2 rounded-full w-10 h-10 flex items-center justify-center mr-4">
@@ -235,7 +238,7 @@ export default function About() {
                     <p>Access to our team of experienced consultants with deep industry expertise</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start">
                   <div className="bg-white text-[var(--primary-blue)] p-2 rounded-full w-10 h-10 flex items-center justify-center mr-4">
                     <FiTarget className="w-5 h-5" />
@@ -245,7 +248,7 @@ export default function About() {
                     <p>Customized approaches designed to address your specific challenges</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start">
                   <div className="bg-white text-[var(--primary-blue)] p-2 rounded-full w-10 h-10 flex items-center justify-center mr-4">
                     <FiAward className="w-5 h-5" />
@@ -257,7 +260,7 @@ export default function About() {
                 </div>
               </div>
             </div>
-            
+
             <ContactForm />
           </div>
         </div>

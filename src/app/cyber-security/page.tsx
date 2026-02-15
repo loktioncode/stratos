@@ -22,14 +22,14 @@ export default function CyberSecurity() {
                 Protect your organization&apos;s critical assets with our advanced cyber security services. We help you identify, prevent, and respond to cyber threats.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link 
-                  href="#security-services" 
+                <Link
+                  href="#security-services"
                   className="btn-primary bg-white text-[var(--primary-blue)] hover:bg-gray-100"
                 >
                   Our Services
                 </Link>
-                <Link 
-                  href="#contact" 
+                <Link
+                  href="#contact"
                   className="btn-primary border border-white hover:bg-white hover:text-[var(--primary-blue)]"
                 >
                   Contact Us
@@ -39,9 +39,10 @@ export default function CyberSecurity() {
             <div className="relative">
               <div className="relative h-[400px] rounded-lg overflow-hidden">
                 <Image
-                  src="/images/cyber-security-team.jpg"
+                  src="/images/cyber-security-team.webp"
                   alt="Cyber security specialists team"
                   fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   style={{ objectFit: 'cover' }}
                   className="rounded-lg"
                   priority
@@ -58,9 +59,10 @@ export default function CyberSecurity() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1 relative h-[500px]">
               <Image
-                src="/images/cyber-diverse-team.jpg"
+                src="/images/cyber-diverse-team.webp"
                 alt="Cyber security diverse team"
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
                 className="rounded-lg"
               />
@@ -73,7 +75,7 @@ export default function CyberSecurity() {
               <p className="text-gray-600 mb-8">
                 Our team of certified security professionals uses industry-leading methodologies and tools to assess, implement, and manage security controls that safeguard your organization from cyber threats.
               </p>
-              
+
               <div className="space-y-4">
                 <div className="flex items-start">
                   <FiEye className="text-[var(--primary-blue)] w-5 h-5 mr-3 mt-1" />
@@ -97,8 +99,8 @@ export default function CyberSecurity() {
         </div>
       </section>
 
-       {/* Why Choose Us Section */}
-       <section className="py-20">
+      {/* Why Choose Us Section */}
+      <section className="py-20">
         <div className="container-wide">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="section-title">Why Choose Stratos for Cyber Security?</h2>
@@ -323,7 +325,7 @@ export default function CyberSecurity() {
         </div>
       </section>
 
-     
+
 
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-gray-50">
@@ -341,7 +343,7 @@ export default function CyberSecurity() {
               <p className="mb-8">
                 Our security experts are ready to help you identify and address your organization&apos;s security challenges. Contact us today to schedule a consultation.
               </p>
-              
+
               <div className="space-y-6">
                 <div className="flex items-center">
                   <FiEye className="w-5 h-5 mr-3" />
@@ -361,7 +363,7 @@ export default function CyberSecurity() {
                 </div>
               </div>
             </div>
-            
+
             <ContactForm />
           </div>
         </div>

@@ -11,8 +11,30 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Stratos - Business Consultancy & Cyber Security Services",
-  description: "Stratos provides expert business consultancy and cyber security services to help organizations navigate the complexities of modern business.",
+  title: "Stratos - Expert Business Consultancy & Cyber Security",
+  description: "Stratos provides expert business consultancy and cyber security services to help organizations navigate the complexities of modern business with strategic IT solutions.",
+  keywords: ["Business Consultancy", "Cyber Security", "IT Strategy", "Digital Transformation", "IT Staff Augmentation", "UAE", "Dubai", "Cybersecurity Services", "Risk Assessment"],
+  authors: [{ name: "Stratos Digital" }],
+  openGraph: {
+    title: "Stratos - Business Consultancy & Cyber Security",
+    description: "Expert business consultancy and cyber security services for modern organizations.",
+    url: "https://stratos.digital",
+    siteName: "Stratos Digital",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Stratos - Business Consultancy & Cyber Security",
+    description: "Expert business consultancy and cyber security services.",
+  },
+  icons: {
+    icon: [
+      { url: "/logo.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/logo.svg",
+    apple: "/logo.svg",
+  },
 };
 
 export default function RootLayout({
