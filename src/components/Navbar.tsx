@@ -4,11 +4,19 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import { FiMenu, FiX } from 'react-icons/fi';
+import { FiMenu, FiX, FiChevronDown, FiChevronUp } from 'react-icons/fi';
+
+const services = [
+  { name: 'Strategic Consulting', href: '/#services' },
+  { name: 'Business Transformation', href: '/#services' },
+  { name: 'Cyber Security Services', href: '/cyber-security#security-services' },
+  { name: 'Security Assessment', href: '/cyber-security#contact' },
+];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -75,6 +83,39 @@ const Navbar = () => {
             >
               Cyber Security
             </Link>
+
+            {/* Our Services Dropdown */}
+            <div className="relative group">
+              <button
+                onClick={() => setIsServicesOpen(!isServicesOpen)}
+                onBlur={() => setTimeout(() => setIsServicesOpen(false), 200)}
+                className={`flex items-center gap-1 font-medium transition-colors focus:outline-none ${isScrolled
+                  ? `text-white/90 hover:text-white ${isServicesOpen ? 'text-white' : ''}`
+                  : `text-gray-700 hover:text-[var(--primary-blue)] ${isServicesOpen ? 'text-[var(--primary-blue)]' : ''}`
+                  }`}
+              >
+                Our Services
+                <FiChevronDown className={`w-4 h-4 transition-transform ${isServicesOpen ? 'rotate-180' : 'group-hover:rotate-180'}`} />
+              </button>
+
+              <div className={`absolute left-0 mt-2 w-64 bg-white rounded-md shadow-xl transition-all duration-300 z-50 border border-gray-100 ${isServicesOpen
+                ? 'opacity-100 translate-y-0 pointer-events-auto'
+                : 'opacity-0 -translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto'
+                }`}>
+                <div className="py-2">
+                  {services.map((service) => (
+                    <Link
+                      key={service.name}
+                      href={service.href}
+                      className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-[var(--primary-blue)] transition-colors border-b border-gray-50 last:border-0"
+                      onClick={() => setIsServicesOpen(false)}
+                    >
+                      {service.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
             <Link
               href="/about"
               className={`font-medium transition-colors focus:font-bold focus:text-[var(--primary-blue)] ${isScrolled
@@ -135,6 +176,41 @@ const Navbar = () => {
               >
                 Cyber Security
               </Link>
+
+              {/* Mobile Services Dropdown */}
+              <div className="flex flex-col">
+                <button
+                  onClick={() => setIsServicesOpen(!isServicesOpen)}
+                  className={`flex justify-between items-center font-medium transition-colors ${isScrolled
+                    ? 'text-white/90 hover:text-white'
+                    : 'text-gray-700 hover:text-[var(--primary-blue)]'
+                    }`}
+                >
+                  Our Services
+                  {isServicesOpen ? <FiChevronUp /> : <FiChevronDown />}
+                </button>
+                {isServicesOpen && (
+                  <div className={`mt-2 ml-4 flex flex-col space-y-3 border-l-2 pl-4 ${isScrolled ? 'border-white/20' : 'border-gray-200'
+                    }`}>
+                    {services.map((service) => (
+                      <Link
+                        key={service.name}
+                        href={service.href}
+                        className={`text-sm transition-colors ${isScrolled
+                          ? 'text-white/80 hover:text-white'
+                          : 'text-gray-600 hover:text-[var(--primary-blue)]'
+                          }`}
+                        onClick={() => {
+                          setIsOpen(false);
+                          setIsServicesOpen(false);
+                        }}
+                      >
+                        {service.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
               <Link
                 href="/about"
                 className={`font-medium transition-colors ${isScrolled
