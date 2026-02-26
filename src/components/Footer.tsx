@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { FiPhone, FiMail, FiMapPin, FiLinkedin, FiTwitter, FiFacebook, FiInstagram } from 'react-icons/fi';
+import { FiPhone, FiMail, FiMapPin} from 'react-icons/fi';
+// import { FiPhone, FiMail, FiMapPin, FiLinkedin, FiTwitter, FiFacebook, FiInstagram } from 'react-icons/fi';
 
 const Footer = () => {
   return (
