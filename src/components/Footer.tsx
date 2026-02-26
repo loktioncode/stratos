@@ -32,8 +32,8 @@ const Footer = () => {
               </a>
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--primary-light-blue)] transition-colors">
                 <FiInstagram className="w-5 h-5" />
-              </a>
-            </div> */}
+              </a>*/}
+            </div> 
           </div>
 
           {/* Quick Links */}
