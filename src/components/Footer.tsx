@@ -21,7 +21,7 @@ const Footer = () => {
             </div>
             <p className="mb-4">Providing expert business consultancy and cyber security services to help organizations navigate the complexities of modern business.</p>
             <div className="flex space-x-4">
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--primary-light-blue)] transition-colors">
+              {/* <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--primary-light-blue)] transition-colors">
                 <FiLinkedin className="w-5 h-5" />
               </a>
               <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--primary-light-blue)] transition-colors">
@@ -33,7 +33,7 @@ const Footer = () => {
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--primary-light-blue)] transition-colors">
                 <FiInstagram className="w-5 h-5" />
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Quick Links */}
@@ -88,7 +88,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <FiMail className="w-5 h-5 mr-2" />
-                <span>info@stratos.digital</span>
+                <span>info@stratosit.digital</span>
               </li>
             </ul>
           </div>

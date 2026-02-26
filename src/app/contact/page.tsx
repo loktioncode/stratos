@@ -33,7 +33,7 @@ export default function Contact() {
                   <FiMail className="text-[var(--primary-blue)] w-6 h-6 mr-4 mt-1" />
                   <div>
                     <h3 className="font-semibold mb-1">Email</h3>
-                    <p>info@stratos-consulting.com</p>
+                    <p>info@stratosit.digital</p>
                   </div>
                 </div>
                 <div className="flex items-start">
