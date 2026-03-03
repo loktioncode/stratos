@@ -21,8 +21,8 @@ const Footer = () => {
               <h3 className="text-xl font-bold">STRATOS DIGITAL</h3>
             </div>
             <p className="mb-4">Providing expert business consultancy and cyber security services to help organizations navigate the complexities of modern business.</p>
-            <div className="flex space-x-4">
-              {/* <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--primary-light-blue)] transition-colors">
+            {/* <div className="flex space-x-4">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--primary-light-blue)] transition-colors">
                 <FiLinkedin className="w-5 h-5" />
               </a>
               <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--primary-light-blue)] transition-colors">
@@ -33,8 +33,8 @@ const Footer = () => {
               </a>
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--primary-light-blue)] transition-colors">
                 <FiInstagram className="w-5 h-5" />
-              </a>*/}
-            </div>
+              </a>
+            </div> */}
           </div>
 
           {/* Quick Links */}
