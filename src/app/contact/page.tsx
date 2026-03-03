@@ -33,14 +33,14 @@ export default function Contact() {
                   <FiMail className="text-[var(--primary-blue)] w-6 h-6 mr-4 mt-1" />
                   <div>
                     <h3 className="font-semibold mb-1">Email</h3>
-                    <p>info@stratosit.digital</p>
+                    <p><a href="mailto:info@stratosit.digital" className="hover:text-[var(--primary-light-blue)] transition-colors">info@stratosit.digital</a></p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <FiPhone className="text-[var(--primary-blue)] w-6 h-6 mr-4 mt-1" />
                   <div>
                     <h3 className="font-semibold mb-1">Phone</h3>
-                    <p>+1 (555) 123-4567</p>
+                    <p><a href="tel:+15551234567" className="hover:text-[var(--primary-light-blue)] transition-colors">+1 (555) 123-4567</a></p>
                   </div>
                 </div>
                 <div className="flex items-start">

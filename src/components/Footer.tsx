@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { FiPhone, FiMail, FiMapPin} from 'react-icons/fi';
+import { FiPhone, FiMail, FiMapPin } from 'react-icons/fi';
 // import { FiPhone, FiMail, FiMapPin, FiLinkedin, FiTwitter, FiFacebook, FiInstagram } from 'react-icons/fi';
 
 const Footer = () => {
@@ -34,7 +34,7 @@ const Footer = () => {
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--primary-light-blue)] transition-colors">
                 <FiInstagram className="w-5 h-5" />
               </a>*/}
-            </div> 
+            </div>
           </div>
 
           {/* Quick Links */}
@@ -85,11 +85,11 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <FiPhone className="w-5 h-5 mr-2" />
-                <span>050 861 1334</span>
+                <a href="tel:0508611334" className="hover:text-[var(--primary-light-blue)] transition-colors">050 861 1334</a>
               </li>
               <li className="flex items-center">
                 <FiMail className="w-5 h-5 mr-2" />
-                <span>info@stratosit.digital</span>
+                <a href="mailto:info@stratosit.digital" className="hover:text-[var(--primary-light-blue)] transition-colors">info@stratosit.digital</a>
               </li>
             </ul>
           </div>
